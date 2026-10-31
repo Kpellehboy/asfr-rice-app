@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "model_name": "ResNet50V2_ASFR",
+  "model_version": "0.1.0",
+  "artifact": "best_model.keras",
+  "artifact_sha256": "14bc371dbcae04ccb311c28dc5842a9d6248942d88da24faf2970c7db5134ee3",
+  "artifact_size_bytes": 108439809,
+  "framework": "TensorFlow/Keras",
+  "keras_version_recorded_at_save": "3.13.2",
+  "input": {
+    "shape": [
+      null,
+      224,
+      224,
+      3
+    ],
+    "color_space": "RGB"
+  },
+  "output": {
+    "shape": [
+      null,
+      9
+    ],
+    "classes": 9,
+    "activation": "softmax"
+  },
+  "class_mapping_file": "class_names.json",
+  "class_names_in_label_order": [
+    "Bacterial Leaf Blight",
+    "Brown Spot",
+    "Healthy Rice Leaf",
+    "Leaf Blast",
+    "Leaf scald",
+    "Narrow Brown Leaf Spot",
+    "Neck_Blast",
+    "Rice Hispa",
+    "Sheath Blight"
+  ],
+  "preprocessing": {
+    "resize": "224x224; bilinear with antialiasing, as specified in research notebook",
+    "normalization": "tf.keras.applications.resnet_v2.preprocess_input",
+    "training_augmentation": "random horizontal flip (training only; not applied at inference)"
+  },
+  "parameter_count": 8996106,
+  "evaluation_reference": {
+    "test_count": 1761,
+    "accuracy": 0.9948892674616695,
+    "macro_f1": 0.9951203335295483,
+    "balanced_accuracy": 0.994812920926544,
+    "note": "Research benchmark metrics from supplied evaluation artifacts; not a production or field-performance guarantee."
+  },
+  "source_artifacts": {
+    "notebook": "asymmetric-spatial-feature-routing(3).ipynb",
+    "evaluation_metadata": "stage7_final_evaluation_metadata.json",
+    "final_audit": "stage9_final_audit.json"
+  },
+  "verification_status": {
+    "artifact_checksum": "computed from packaged artifact",
+    "model_load": "NOT VERIFIED in this environment",
+    "prediction_parity": "NOT VERIFIED",
+    "dependency_installation": "NOT VERIFIED"
+  },
+  "limitations": [
+    "Dataset source provenance is not independently established.",
+    "Near-duplicate review leaves residual cross-partition provenance risk.",
+    "Single-seed experiments do not establish robustness across random seeds.",
+    "Benchmark results do not establish field robustness."
+  ]
+}

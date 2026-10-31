@@ -1,0 +1,50 @@
+{
+  "stage": "Stage 2 \u2014 Create repository and versioned model package",
+  "status": "PARTIAL \u2014 runtime verification blocked",
+  "repository_version": "0.1.0",
+  "model_sha256": "14bc371dbcae04ccb311c28dc5842a9d6248942d88da24faf2970c7db5134ee3",
+  "model_size_bytes": 108439809,
+  "class_count": 9,
+  "class_names": [
+    "Bacterial Leaf Blight",
+    "Brown Spot",
+    "Healthy Rice Leaf",
+    "Leaf Blast",
+    "Leaf scald",
+    "Narrow Brown Leaf Spot",
+    "Neck_Blast",
+    "Rice Hispa",
+    "Sheath Blight"
+  ],
+  "notebook_checks": {
+    "contains_ASFR_class_or_function": true,
+    "contains_resnet_v2_preprocessing": true,
+    "contains_bilinear_resize": true,
+    "contains_class_names": true
+  },
+  "checks": {
+    "required_files_created": true,
+    "class_mapping_nine_unique_labels": true,
+    "checksum_reproducible": true,
+    "clean_dependency_install": "NOT VERIFIED",
+    "model_load_from_package": "NOT VERIFIED"
+  },
+  "source_inputs": {
+    "asymmetric-spatial-feature-routing(3).ipynb": {
+      "exists": true,
+      "size_bytes": 69163736
+    },
+    "best_model.keras": {
+      "exists": true,
+      "size_bytes": 108439809
+    },
+    "stage7_final_evaluation_metadata.json": {
+      "exists": true,
+      "size_bytes": 4726
+    },
+    "stage9_final_audit.json": {
+      "exists": true,
+      "size_bytes": 15286
+    }
+  }
+}

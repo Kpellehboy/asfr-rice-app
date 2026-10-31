@@ -1,0 +1,79 @@
+{
+  "image": "C:\\Users\\Menuo\\Desktop\\KBK\\Papers\\Capstone_Research\\Dataset\\archive\\Rice_Leaf_AUG\\Bacterial Leaf Blight\\20231006_164208.jpg",
+  "mask": "C:\\Users\\Menuo\\Desktop\\KBK\\Papers\\Capstone_Research\\ASFR RICE DISEASE WEB APP WITH XAI\\asfr-rice-app\\backend\\tests\\assets\\leaf_background_mask.png",
+  "mask_leaf_fraction": 0.1811796875,
+  "baseline_target_class": "Bacterial Leaf Blight",
+  "baseline": {
+    "variant": "original",
+    "predicted_class": "Bacterial Leaf Blight",
+    "predicted_index": 0,
+    "predicted_probability": 0.9998908042907715,
+    "baseline_target_probability": 0.9998908042907715,
+    "baseline_target_probability_change": 0.0,
+    "top_class_changed": false
+  },
+  "background_gray": {
+    "variant": "background_gray_127",
+    "predicted_class": "Narrow Brown Leaf Spot",
+    "predicted_index": 5,
+    "predicted_probability": 0.3245182931423187,
+    "baseline_target_probability": 0.24160920083522797,
+    "baseline_target_probability_change": -0.7582815885543823,
+    "top_class_changed": true
+  },
+  "background_light_gray": {
+    "variant": "background_light_gray_200",
+    "predicted_class": "Neck_Blast",
+    "predicted_index": 6,
+    "predicted_probability": 0.9999666213989258,
+    "baseline_target_probability": 1.1074655958509538e-05,
+    "baseline_target_probability_change": -0.9998797178268433,
+    "top_class_changed": true
+  },
+  "leaf_region_control": {
+    "variant": "leaf_region_gray_control",
+    "predicted_class": "Bacterial Leaf Blight",
+    "predicted_index": 0,
+    "predicted_probability": 0.4043228030204773,
+    "baseline_target_probability": 0.4043228030204773,
+    "baseline_target_probability_change": -0.5955680012702942,
+    "top_class_changed": false
+  },
+  "background_gray_probability_vector": [
+    0.24160920083522797,
+    0.031791891902685165,
+    0.1939103603363037,
+    0.05226265639066696,
+    0.10751975327730179,
+    0.3245182931423187,
+    0.002024315530434251,
+    0.030613603070378304,
+    0.015749847516417503
+  ],
+  "background_light_gray_probability_vector": [
+    1.1074655958509538e-05,
+    2.0349729012991702e-08,
+    5.703337180307244e-08,
+    1.484330823586788e-06,
+    1.8969163647852838e-05,
+    2.6435895694731926e-09,
+    0.9999666213989258,
+    7.967341844050679e-07,
+    1.07794232917513e-06
+  ],
+  "leaf_control_probability_vector": [
+    0.4043228030204773,
+    0.004968639928847551,
+    0.02796737290918827,
+    0.14258289337158203,
+    0.17502442002296448,
+    0.011693890206515789,
+    0.03673647716641426,
+    0.1394372582435608,
+    0.05726626515388489
+  ],
+  "checkpoint_sha256_before": "14bc371dbcae04ccb311c28dc5842a9d6248942d88da24faf2970c7db5134ee3",
+  "checkpoint_sha256_after": "14bc371dbcae04ccb311c28dc5842a9d6248942d88da24faf2970c7db5134ee3",
+  "checkpoint_unchanged": true,
+  "interpretation_note": "Single-image diagnostic only. Mask quality and the chosen replacement colors affect the result; this is not causal proof."
+}

@@ -1,0 +1,36 @@
+# Secrets and environment
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+coverage/
+
+# Model and user data
+*.keras
+*.h5
+*.hdf5
+uploads/
+generated/
+heatmaps/
+*.log
+
+# Local runtime and editor files
+.DS_Store
+.vscode/
+.idea/
